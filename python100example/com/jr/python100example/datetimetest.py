@@ -1,7 +1,7 @@
 #encoding=utf8
 __author__ = 'Administrator'
 
-import datetime
+import datetimetest
 
 """
 当你打开一个.py文件时,经常会在代码的最下面看到if __name__ == '__main__':,现在就来介 绍一下它的作用.
@@ -20,15 +20,15 @@ __name__ == "__main__"
 if __name__ == "__main__":
 
    # 输出今日日期，格式为 dd/mm/yyyy。更多选项可以查看 strftime() 方法
-   print(datetime.date.today().strftime("%d/%m/%Y"))
+   print(datetimetest.date.today().strftime("%d/%m/%Y"))
 
    #创建日期对象
-   miyazakiBirthDate = datetime.date(2016,1,28)
+   miyazakiBirthDate = datetimetest.date(2016, 1, 28)
 
    print(miyazakiBirthDate.strftime("%d/%m/%Y"))
 
    #日期算术运算
-   miyazakiBirthNextDay = miyazakiBirthDate + datetime.timedelta(days=1)
+   miyazakiBirthNextDay = miyazakiBirthDate + datetimetest.timedelta(days=1)
    print(miyazakiBirthNextDay.strftime("%d/%m/%Y"))
 
 
